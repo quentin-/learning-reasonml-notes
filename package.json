@@ -1,0 +1,27 @@
+{
+  "name": "notes",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://quentin-.github.io/learning-reasonml-notes",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^16.5.2",
+    "reason-scripts": "0.9.0",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "prepare": "npm link bs-platform",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.4",
+    "gh-pages": "^2.0.0",
+    "reason-react": "^0.5.3"
+  }
+}

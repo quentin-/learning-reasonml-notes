@@ -1,0 +1,43 @@
+.NoteList-item {
+  color: #bebfc0;
+  padding: 12px;
+}
+
+.NoteList-item:hover {
+  cursor: pointer;
+}
+
+.NoteList-item--selected {
+  background-color:#42464d;
+}
+
+.NoteList-item-enter {
+  height: 0;
+  opacity: 0;
+  padding: 0 12px;
+}
+
+.NoteList-item-enter.NoteList-item-enter-active {
+  opacity: 1;
+  padding: 12px;
+  height: auto;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+  transition-property: padding, height, opacity;
+}
+
+
+.NoteList-item-leave {
+  opacity: 1;
+  padding: 12px;
+  height: auto;
+}
+
+.NoteList-item-leave.NoteList-item-leave-active {
+  height: 0;
+  opacity: 0;
+  padding: 0 12px;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+  transition-property: padding, height, opacity;
+}
